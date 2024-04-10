@@ -14,6 +14,7 @@ dependencies = [
     "SQLAlchemy==2.0.29",
     "Starlette-WTF==0.4.3",
     "WTForms==3.1.2",
+    "alembic==1.13.1",
 ]
 requires-python = ">=3.12.0"
 readme = "README.md"
@@ -22,3 +23,8 @@ license = {text = "MIT"}
 
 [tool.pdm]
 distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ipython>=8.23.0",
+]
